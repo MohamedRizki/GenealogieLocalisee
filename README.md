@@ -51,7 +51,7 @@ To run this project locally, we recommend the following setup:
 │   └── Version                         # Leaflet version file
 ├── bdd/
 │   └── genealogie/
-│   └── utilisateurs.sql                # SQL script to create the database and table
+│   │   └── utilisateurs.sql            # SQL script to create the database and table
 └── README.md                           # README project
 ```
 
@@ -78,7 +78,7 @@ Launch both services by clicking "Start Servers" in MAMP.
 
 1. Go to [http://localhost/phpmyadmin](http://localhost/phpmyadmin)  
 2. Create a new database called `genealogie`  
-3. Import the `bdd/genealogie.sql` file
+3. Import the `bdd/genealogie/utilisateurs.sql` file
 
 ### 5. Check database connection :
 
