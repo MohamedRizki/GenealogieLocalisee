@@ -1,0 +1,104 @@
+/* 
+Ce fichier CSS est conçu pour styliser la version mobile de la page de garde du projet 'Généalogie Localisée' de l'ENSG. 
+
+Auteurs : Mohamed RIZKI & Marie GRARD
+*/
+
+
+@media (max-width: 768px) {
+  /* Styles pour le mode portrait */
+  .container {
+    flex-direction: column;
+  }
+
+  .school-logo {
+    max-width: 100px;
+    height: auto;
+    border-width: 1px;
+    margin-bottom: 0;
+  }
+
+  .login-right {
+    order: -1;
+    height: auto;
+  }
+  
+  .login-right img {
+    order: -2;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .login-header h1 {
+    font-size: 0.8rem;
+  }
+
+  .login-header p {
+    font-size: 0.6rem;
+    margin-bottom: 2px;
+  }
+
+  .login-form {
+    margin-top: 10px;
+  }
+
+  button[type="submit"] {
+    font-size: 0.4rem;
+    padding: 8px 16px;
+    margin-top: 5px;
+  }
+
+  .login-left {
+    padding: 0px;
+    overflow-y: scroll;
+  }
+
+  .checkboxLabel {
+    font-size: 10px;
+    margin-bottom: 2px;
+  }
+
+  input[type=checkbox] {
+    transform: scale(0.60);
+    margin-bottom: 2px;
+  }
+}
+
+/* Styles spécifiques pour le mode paysage */
+@media only screen and (max-height: 768px) and (max-width: 1024px) {
+
+  .login-header h1 {
+    font-size: 0.7rem;
+  }
+
+  .login-header p, .checkboxLabel, button[type="submit"] {
+    font-size: 0.55rem;
+  }
+
+  .school-logo {
+    max-width: 80px; 
+    margin: 5px auto;
+    border-width: 1px; 
+  }
+
+  input[type=checkbox] {
+    transform: scale(0.5); 
+    margin: 2px 0; 
+  }
+
+  button[type="submit"] {
+    padding: 6px 12px; 
+    margin-top: 5px; 
+  }
+
+  .login-form {
+    margin-top: 5px;
+  }
+
+  .login-left, .login-right {
+    padding: 0px;
+
+  }
+
+}

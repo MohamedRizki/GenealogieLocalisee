@@ -1,0 +1,113 @@
+/* 
+Ce fichier CSS défini les styles pour les popupes utilisés dans le projet 'Généalogie Localisée' de l'ENSG. 
+Il inclut les styles pour la fenêtre popup elle-même, le contenu du popup, le bouton de fermeture, ainsi que 
+pour les différents éléments de formulaire tels que les champs de texte, les boutons, les cases à cocher, et les options de genre.
+
+Auteurs : Mohamed RIZKI & Marie GRARD
+*/
+
+/* Style pour le popup */
+.popup {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  font-family: "Times New Roman", serif; 
+  font-size: 14.5px; 
+}
+
+/* Style pour le contenu du popup */
+.popup-contenu {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 2px solid black;
+  width: 90%; 
+}
+
+/* le boutton de fermuture */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Styles pour les entrées de formulaire */
+.popup-contenu input[type="text"],
+.popup-contenu input[type="number"],
+.popup-contenu input[type="date"],
+.popup-contenu select,
+.popup-contenu input[type="button"] {
+  display: block;
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 0px; 
+  box-sizing: border-box; 
+}
+
+.popup-contenu label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.popup-contenu input[type="radio"] {
+  display: inline-block;
+}
+
+#genderOptions input[type="radio"],
+#genderOptions label {
+    display: inline-block; 
+    margin-right: 8px; 
+}
+/*les cartes */
+#mapid {
+    height: 130px; 
+    margin-bottom: 1px;
+}
+
+fieldset {
+  border: 2px solid black;
+  padding: 10px;
+  margin-bottom: 20px; 
+}
+
+legend {
+  font-size: 15px; 
+  font-weight: bold; 
+}
+
+/* mettre le case a coucher et je ne souhaite pas repondre au formulaire dans un seul ligne */
+.checkbox-container {
+    display: flex;
+}
+
+.checkbox-container label {
+    margin-bottom: -100px;  
+}
+/* mettre plusieurs questions questuons dans un seul ligne */
+.row {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 4px; 
+}
+
+.column {
+    flex: 1; 
+    margin-right: 10px; 
+}
+
+.column:not(:last-child) {
+    margin-right: 10px;
+}

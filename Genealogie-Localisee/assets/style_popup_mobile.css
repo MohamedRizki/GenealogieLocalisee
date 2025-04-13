@@ -1,0 +1,84 @@
+/*
+Ce fichier CSS contient des styles adaptatifs pour les appareils à écran plus petit, principalement pour les appareils mobiles et tablettes avec une largeur 
+maximale de 768px et 1024px. 
+
+Développeurs : Mohamed RIZKI & Marie GRARD
+*/
+
+@media (max-width: 768px) {
+
+  .row {
+      flex-direction: column; 
+      margin-bottom: 0;
+  }
+
+  .column,
+  .column:not(:last-child) {
+      margin-right: 0; 
+      margin-bottom: 4px; 
+  }
+  .popup {
+    font-size: 12px; 
+  }
+.popup-contenu input[type="text"],
+.popup-contenu input[type="number"],
+.popup-contenu input[type="date"],
+.popup-contenu select,
+.popup-contenu input[type="button"] {
+  display: block;
+  width: 100%;
+  padding: 3px;
+  margin-bottom: 0px; 
+  box-sizing: border-box; 
+  font-size: 10px;
+}
+  .checkbox-container input[type="checkbox"] {
+    transform: scale(0.8); 
+  }
+
+legend {
+  font-size: 12px; 
+  font-weight: bold;
+}
+
+}
+
+@media only screen and (max-height: 768px) and (max-width: 1024px) {
+
+  .row {
+      flex-direction: column; 
+      margin-bottom: 0; 
+  }
+
+  .column,
+  .column:not(:last-child) {
+      margin-right: 0; 
+      margin-bottom: 4px; 
+  }
+
+  .popup {
+    font-size: 12px; 
+  }
+
+.popup-contenu input[type="text"],
+.popup-contenu input[type="number"],
+.popup-contenu input[type="date"],
+.popup-contenu select,
+.popup-contenu input[type="button"] {
+  display: block;
+  width: 100%;
+  padding: 3px;
+  margin-bottom: 0px; 
+  box-sizing: border-box; 
+  font-size: 10px;
+}
+  .checkbox-container input[type="checkbox"] {
+    transform: scale(0.8); 
+  }
+
+legend {
+  font-size: 12px; 
+  font-weight: bold;
+}
+
+}

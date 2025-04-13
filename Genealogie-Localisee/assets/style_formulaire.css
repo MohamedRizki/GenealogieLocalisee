@@ -1,0 +1,140 @@
+/* 
+Ce fichier CSS est conçu pour styliser la page principale (Questionnaire) du projet 'Généalogie Localisée' de l'ENSG. 
+
+Auteurs : Mohamed RIZKI & Marie GRARD
+*/
+
+/* Styles généraux pour le corps de la page */
+body {
+  margin: 0; 
+  font-family: Arial, sans-serif; 
+  overflow-x: hidden;
+  padding-top: 60px; 
+  background-image: url('../images/page_de_garde.jpg');
+  background-size: cover; 
+  background-position: center;
+}
+
+/* Styles pour l'en-tête de la page */
+.header {
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  padding: 12px 6px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  z-index: 1000; 
+}
+
+/* Styles pour le titre dans l'en-tête */
+.header .title {
+  position: absolute;
+  left: 50%; 
+  top: 100%; 
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  font-weight: bold; 
+  font-size: 18px;
+  color: white; 
+  font-family: Britannic Bold, serif;
+} 
+
+/* Styles pour le conteneur principal contenant les éléments carrés */
+.square-container {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-around; 
+  align-items: stretch; 
+  height: calc(100vh - 60px); 
+  margin-left: 0px; 
+  padding: 0px 0; 
+  box-sizing: border-box; 
+}
+
+/* Styles pour les éléments carrés individuels dans le conteneur */
+.square {
+  width: calc((100% - 120px) / 3); 
+  height: 100%;
+  /* border: 4px solid black;  Bordure noire solide */
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+/* Styles pour un bouton centré */
+.centered-button {
+  margin: auto; 
+  padding: 14px 20px;
+  cursor: pointer;
+  border: 1px solid black; 
+  font-size: 12px;
+  font-family: Britannic Bold, serif;
+}
+
+.inner-container, .half-rectangle, .quarter-rectangle {
+  flex: 1;
+  /*border: 2px solid black;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* Assurer que tous les éléments utilisent box-sizing: border-box */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+/* Connexions entre les bouttons */
+
+/* Ajout pour rendre les lignes visibles et les ajuster */
+.line {
+  position: absolute;
+  height: 2px; 
+  background-color: black; 
+  transform-origin: 0 0; 
+  border-bottom: 3.5px dashed white; 
+  background-color: transparent;
+}
+
+/* Assurer que le conteneur des lignes est relatif pour positionner les lignes absolues */
+#first-square {
+  position: relative;
+}
+
+/* Les bottons annuler et valider le formulaire */
+
+/* Nouveaux styles pour les boutons "Annuler" et "Valider le formulaire" */
+.cancel-button, .submit-button {
+  margin-top: 0px;
+  margin-left: 80px;
+  padding: 9px 20px;
+  border: 1px solid black;
+  border-radius: 1px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.cancel-button {
+  background-color: red;
+  color: white;
+}
+
+.submit-button {
+  background-color: green;
+  color: white;
+}
+
+/* Styles pour les effets au survol des boutons Annuler et Valider*/
+.cancel-button:hover, .submit-button:hover {
+  border: 2px solid white;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+
+/* Styles pour les effets lors de l'activation (clic) des boutons Annuler et Valider*/
+.cancel-button:active, .submit-button:active {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);

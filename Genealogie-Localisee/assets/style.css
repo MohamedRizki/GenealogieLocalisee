@@ -1,0 +1,102 @@
+/* 
+Ce fichier CSS est conçu pour styliser la page de garde du projet 'Généalogie Localisée' de l'ENSG. 
+
+Auteurs : Mohamed RIZKI & Marie GRARD
+*/
+
+/* Importation de la police Inter depuis Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap");
+
+/* Réinitialisation de certains styles CSS et définition de styles de base */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-size: 0.94rem;
+  font-family: 'Times New Roman', sans-serif;
+  background: linear-gradient(45deg, #004d00, #33cc33);
+}
+
+/* Style du conteneur principal */
+.container {
+  display: flex;
+  height: 100vh;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+/* Styles pour la section de gauche */
+.login-left {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Styles pour la section de droite */
+.login-right {
+  flex: 1;
+  background-color: black;
+}
+.login-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Styles pour l'en-tête */
+.login-header {
+  margin-bottom: 0px;
+}
+.login-header h1 {
+  font-size: 20px;
+  margin-bottom: 0px;
+  text-align: center
+}
+.login-header p {
+  text-align: justify;
+}
+
+/* Styles pour le formulaire */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+.login-form-content {
+  display: flex;
+  flex-direction: column;
+  column-gap: 35px;
+}
+
+/* Styles pour le bouton */
+button[type="submit"] {
+  display: inline-block; 
+  padding: 4px 4px; 
+  font-size: 16px; 
+  color: black;
+  background: linear-gradient(45deg, #004d00, #a5c3a1); 
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer; 
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  transition: all 0.3s ease; 
+  font-weight: 700; 
+}
+
+/* Styles pour le logo */
+.school-logo {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 7px;
+  border-width: 10px;
+  border-style: double;
+  border-color: #004d00;
+}
+
