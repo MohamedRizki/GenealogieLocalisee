@@ -5,7 +5,7 @@ Its goal is to collect personal, familial, and geographical data to explore patt
 
 ---
 
-## System Requirements :
+## Requirements :
 
 To run this project locally, we recommend the following setup:
 
