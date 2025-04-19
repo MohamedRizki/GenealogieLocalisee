@@ -1,7 +1,5 @@
 # Research Initiation Project — *Localized Genealogy*
 
-## Introduction :
-
 This interactive form was developed as part of a research initiation project by **Mohamed RIZKI** and **Marie GRARD** at ENSG.  
 Its goal is to collect personal, familial, and geographical data to explore patterns of kinship across space through a geographically enriched family tree.
 
